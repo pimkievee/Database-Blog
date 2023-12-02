@@ -1,0 +1,27 @@
+Dear DevOps Enthusiast,
+
+We have developed a blogging application wherein users can publish their blog pages, complete with comments, and include movie or picture files.
+
+The movie and picture files are stored as objects on Amazon S3. Your task is to create an S3 bucket and specify its name in the "/src/cblog/settings.py" file under the AWS_STORAGE_BUCKET_NAME variable. Additionally, it is essential to define the region of the S3 bucket in the AWS_S3_REGION_NAME variable.
+
+The user credentials and blog content will be stored in an RDS database. After creating the RDS, certain variables need to be configured in the "/src/cblog/settings.py" file to allow ECs to connect to RDS:
+a. Database name - "NAME" variable
+b. Database endpoint - "HOST" variable
+c. Port - "PORT" variable
+d. For security purposes, the PASSWORD variable must be included in the "/src/.env" file instead of the settings file to prevent exposure.
+
+To facilitate viewing the object list in S3, we have decided to establish a DynamoDB table. We plan to utilize a Lambda function along with the Python code we've prepared for this purpose. However, we require assistance in creating the Lambda function to oversee this serverless process. The Python function named lambda_function.py can be found within our GitHub repository.
+
+As our primary goal is to maintain a highly secure environment, we request you to set up this infrastructure within our dedicated VPC.
+
+Thank you, Future DevOps, for your support and dedication. We wish you the best of luck in this endeavor.
+
+Best regards,
+
+Hope Valerie
+
+
+
+
+
+
