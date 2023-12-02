@@ -80,9 +80,9 @@ In the architecture, you can configure your infrastructure using the followings,
 
     - Prepare Django environment on EC2 instance based on Developer Notes,
 
-    - Download the "clarusway_aws_capstone" folder from Github repository,
+    - Download the "hope_aws_capstone" folder from Github repository,
 
-    - Install the requirements using requirements.txt in 'clarusway_aws_capstone' folder
+    - Install the requirements using requirements.txt in 'hope_aws_capstone' folder
 
     - Deploy the Django application on port 80.
 
@@ -90,7 +90,7 @@ In the architecture, you can configure your infrastructure using the followings,
 
     - EC2 Instances type can be configured as `t2.micro`.
 
-    - Instance launched should be tagged `Clarusway AWS Capstone Project`
+    - Instance launched should be tagged `hope AWS Capstone Project`
 
     - Since Django App needs to talk with S3, S3 full access role must be attached EC2s. 
 
@@ -172,7 +172,7 @@ In the architecture, you can configure your infrastructure using the followings,
 ## Project Skeleton 
 
 ```text
-clarusway_blog_proj (folder)
+hope_blog_proj (folder)
 |
 |----Readme.md               # Given to the DevOps staff (Definition of the project)
 |----src (folder)            # Given to the DevOps staff (Django Application's )
@@ -183,7 +183,7 @@ clarusway_blog_proj (folder)
 
 ## Expected Outcome
 
-![Phonebook App Search Page](./outcome.png)
+![Phonebook App Search Page]
 
 ### At the end of the project, following topics are to be covered;
 
@@ -258,13 +258,13 @@ clarusway_blog_proj (folder)
 
 - Step 4: Create two S3 Buckets and set one of these as static website.
 
-- Step 5: Download or clone project definition from `Clarusway` repo on Github 
+- Step 5: Download or clone project definition from `Hope` repo on Github 
 
 - Step 6: Prepare your Github repository 
 
 - Step 7: Prepare a userdata to be utilized in Launch Template
 
-- Step 8: Write RDS, S3 in settings file given by Clarusway Fullstack Developer team  
+- Step 8: Write RDS, S3 in settings file given by Hope Fullstack Developer team  
 
 - Step 9: Create NAT Instance in Public Subnet
 
